@@ -1,0 +1,369 @@
+/* цвет основного текста #757575; */
+/* вторичный цвет текста  rgba(255, 255, 255, 0.6); */
+/* белый #FFFFFF  */
+/* акцент #2196F3; */
+/* тайтл #212121; */
+/* цвет фона Hero и футер #2F303A; */
+/* вторичный цвет фона #F5F4FA; */
+
+:root 
+    {
+        --primary-text-color: #757575;
+        --secondary-text-color: rgba(255, 255, 255, 0.6);
+        --primary-white-color: #ffffff;
+        --accent-color: #2196F3;
+        --title-text-color: #212121;
+        --background-color: #2F303A;
+        --secondary-background-color: #F5F4FA;
+    
+}
+
+/* ============= Body ============= */
+
+/* logo Текст размер */
+.logo {
+font-family: Raleway, sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.192;
+width: 145px;
+/* Блочная модель + flex */
+padding-top: 24px;
+padding-bottom: 25px;
+margin-right: 93px;
+}
+/* logo Цвет */
+.color-web {
+  color: var(--accent-color);
+}
+.color-studio {
+  color: var(--primary-white-color);
+}
+
+.list {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px auto;
+}
+ /* Блочная модель + flex */
+.item:not(:last-child) {
+  margin-right: 30px; 
+}
+img {
+  display: block;
+}
+
+.link {
+text-decoration: none;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+
+  /* body Текст размер */
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.714;
+  }
+  /* address Текст размер  */
+    .address-nav,
+    .address-nav-footer {
+      font-style: normal;
+  }
+
+  /* section title h2,h3 Текст размер */
+    .section-title,
+    .team .title,
+    .spetsialist {
+      text-align: center;
+ }
+
+ .container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto; 
+ }
+
+ .address-nav .mail {
+  width: 135px;
+ }
+
+/* ============= Body END ============= */
+
+
+/* ======= Site nav and Header ======= */
+.company-header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.webstudio-nav .link,
+.logo {
+  color: var(--title-text-color);
+}
+
+.webstudio-nav .link:hover,
+.webstudio-nav .link:focus { 
+  color: var(--accent-color); 
+}
+
+.address-nav .link {
+  color: var(--primary-text-color);
+}
+
+.address-nav .link:hover,
+.adsress-nav .link:focus { 
+  color: var(--accent-color); 
+}
+
+/* Site nav Текст размер */
+.webstudio-nav {
+  width: 294px;
+}
+.webstudio-nav,
+.address-nav {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.143;
+  /* Бллочная модель + flex */
+  display: flex;
+  margin: 0px;
+  padding: 32px 0px;
+}
+.address-nav {
+  margin-left: auto;
+}
+.webstudio-nav .item:not(:last-child) { 
+margin-right: 50px;
+}
+.address-nav a.link:not(:last-child) { 
+  margin-right: 50px;
+}
+
+ /* Position-flex Блочная модель + flex */
+.position-flex {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+/* ======= Site nav END ======= */
+
+
+/* ======= Hero Шапка Блок банер ======= */
+.hero-title {
+  color: var(--primary-white-color);
+  
+  /* Hero Текст размер*/
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  /*Hero Блочная модель*/
+  margin: 0 auto 30px;
+}
+
+.hero {
+  background-color: var(--background-color);
+  padding: 200px 0px;
+  text-align: center;
+}
+
+/* ======= Hero Шапка Блок банер END ======= */
+
+
+/* ======= all-team ======= */
+.all-team {
+  background-color: var(--secondary-background-color);
+}
+
+/*all-team Текст размер и portfolio */
+.spetsialist { 
+font-size: 16px;
+line-height: 1.188;
+/* Блочная модель + flex */
+padding-bottom: 30px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.gallery-portfolio {
+  font-size: 16px;
+  line-height: 1.875;
+  margin: 0px;
+  padding: 0px 24px 20px;
+  width: 370px;
+}
+/* ======= all-team END ======= */
+
+
+/* ======= Button ======= */
+.button {
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+  
+  /* button Текст размер */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px 31px;
+} 
+
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.button.primary {
+  display: inline-block;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  
+  /* button primary Текст размер */
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  width: 200px;
+}
+.button-secondary {
+  padding: 6px 22px;
+  border-width: 0px;
+  letter-spacing: 0.03em;
+}
+/* ======= Button END======= */
+
+
+/* ======= SECTION ======= */
+
+.section {
+  padding-bottom: 94px;
+}
+/* Section title h2*/
+.section-title {
+  color: var(--title-text-color);
+
+  /* Section title h2 Текст размер */
+font-weight: 700;
+font-size: 36px;
+line-height: 1.167;
+
+/* section-title Блочная модель + flex */ 
+margin: 0px auto 50px;
+}
+
+/* Section title h3*/
+.section .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.189;
+  /* Блочная модель + flex */
+  margin: 30px 0px 10px;
+  
+}
+
+/* feature list Текст размер */
+.feature .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+/* feature Блочная модель + flex */
+.feature,
+.section-title {
+  padding-top: 94px;
+}
+
+.description {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.work,
+.team,
+.feature {
+  display: flex;
+}
+.team .item {
+ background-color: var(--primary-white-color); 
+ border-radius: 0px 0px 4px 4px;
+}
+.img-ramka {
+  border-radius: 0px;
+}
+/* ======= SECTION END ======= */
+
+/* Footer */
+
+.address-footer {
+  color: var(--primary-white-color);
+  margin: 20px 0px 9px;
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom:  60px;
+  background-color: var(--background-color);
+}
+.address-nav-footer .link {
+  color: var(--secondary-text-color);
+  display: block;
+}
+.footer .logo {
+  margin: 0px;
+}
+.footer .mail {
+  margin-bottom: 9px;
+}
+
+/* ======= PORTFOLIO ======= */
+  /* section title h2,h3 Текст размер */
+.leftside{ 
+  text-align: inherit;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  padding: 20px 24px 0px;
+  margin-bottom: 4px;
+  width: 370px;
+}
+
+/* filter Блочная модель и flex */
+.filter {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.filter-block {
+  margin: 0px 0px 50px;
+  text-align: center;
+}
+.project-filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-portfolio {
+  width: calc((100% - 60px) / 3);
+  border: 1px solid #EEEEEE;
+}
+.item-portfolio:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.item-portfolio:not(:nth-last-child(-n +3)) {
+  margin-bottom: 30px;
+}
+
+.card-name {
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  width: 370px;
+}
